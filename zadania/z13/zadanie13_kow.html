@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="color:green;font-size:50px;">
+        <script language="JavaScript">
+            var m_kow=prompt("m=","");
+            var b_kow;
+            var c_kow;
+            var a_kow=parseFloat(m_kow);
+            b_kow = a_kow + 1;
+            c_kow = a_kow * (a_kow+1);
+            document.write("1/" + a_kow + " = 1/" + b_kow + " +1/" + c_kow + "<br>");
+
+            function okno_zamknij_kowalewski(){
+                window.close();
+            }
+        </script>
+    </div>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_kowalewski()"/>
+</body>
+</html>

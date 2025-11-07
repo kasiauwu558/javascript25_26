@@ -7,7 +7,7 @@
         b_liczba = parseFloat(b_kow);
         Pole_wynik = a_liczba*b_liczba;
         document.getElementsByName('pole')[0].value=Pole_wynik.toFixed(2); /* na dokument */
-        alert("Pole="+V_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+        alert("Pole="+Pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
         pokaz1.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
     }
 
@@ -16,7 +16,7 @@
         b_liczba = parseFloat(b_kow);
         Obw_wynik = 2*(a_liczba+b_liczba);
         document.getElementsByName('obw')[0].value=Obw_wynik.toFixed(2); /* na dokument */
-        alert("Obwod="+V_wynik.toFixed(2)+" cm"); /*do okna Alert */
+        alert("Obwod="+Obw_wynik.toFixed(2)+" cm"); /*do okna Alert */
         pokaz2.innerHTML="Obwod="+Obw_wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
     }
     </script>

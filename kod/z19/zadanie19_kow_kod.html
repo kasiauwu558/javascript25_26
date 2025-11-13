@@ -1,0 +1,32 @@
+<html>
+<body>
+<textarea cols="100" rows="34">
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type="text/javascript">
+        function pole_kowalewski(){
+            var a_kow = parseFloat(document.getElementById('dlugosc').value);
+            var b_kow = a_kow*a_kow;
+            document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_kow.toFixed(2)+" cm^2";
+        }
+
+        function obwod_kowalewski(){
+            var a_kow = parseFloat(document.getElementById('dlugosc').value);
+            var b_kow = 4*a_kow;
+            document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_kow.toFixed(2)+" cm";
+        }
+    </script>
+
+    <h1>Wszystko o KWADRACIE</h1><br><br>
+    Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+    <input type="button" name="pole" value="Oblicz pole" Onclick="pole_kowalewski()"><br><br>
+    <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_kowalewski()"><br><br>
+    <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

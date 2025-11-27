@@ -1,0 +1,29 @@
+<html>
+<body>
+<textarea cols="80" rows="25">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kowalewski 3G</title>
+</head>
+<body>
+
+    <script>
+        var odl_kow = parseFloat(prompt("odl=",""));
+        var s_kow = parseFloat(prompt("s=",""));
+        
+        var h_kow = Math.sqrt(s_kow*s_kow - odl_kow*odl_kow)
+        var kat_kow_rad = Math.asin(h_kow/s_kow);
+        var kat_kow = kat_kow_rad * 180 / Math.PI;
+
+        document.write("odl = " + odl_kow + "<br>");
+        document.write("s = " + s_kow + "<br>");
+        document.write("h = " + h_kow.toFixed(2) + "<br>");
+        document.write("kąt = " + kat_kow.toFixed(2) + "° <br>");
+    </script>
+</body>
+</html>
+<!-- Kowalewski 3G -->
+</textarea>
+</body>
+</html>

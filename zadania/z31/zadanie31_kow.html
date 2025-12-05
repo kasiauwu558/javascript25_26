@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var Telefon = {
+            siec: '5G',
+            system: 'Android',
+            procesor: 'MediaTek Dimensity 8300-Ultra',
+            telefon_pokaz_kowalewski: function (){
+                document.write("System: " + this.system + "<br>" + "Procesor: " + this.procesor + "<br>" + "Sieć: " + this.siec)
+            }
+        }
+        Telefon.telefon_pokaz_kowalewski();
+        Telefon.ram=8;
+        Telefon.wypisz=function() {
+            alert('Pojemność ram: ' + this.ram + ' GB');
+        }
+        Telefon.wypisz();   
+    </script>
+</head>
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to telefon<br>
+    Pola:<br>
+    siec<br>
+    system<br>
+    procesor<br>
+    metoda: telefon_pokaz_kowalewski<br>
+    nowe pole to ram <br>
+    nowa metoda to wypisz();<br>
+</body>
+</html>

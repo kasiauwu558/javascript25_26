@@ -1,0 +1,41 @@
+<html>
+<body>
+<textarea cols="120" rows="36">
+<html>
+<head>
+    <script type="text/javascript">
+    function telefon (siec, system, procesor, ram) { // początek konstruktora
+        this.siec=siec;
+        this.system=system;
+        this.procesor=procesor;
+        this.ram=ram;
+    } // koniec konstruktora
+
+    telefon.prototype.wypisz = function () { // definicja metody
+        alert(this.siec + ' ' + this.system + ' ' + this.procesor + ' ' + this.ram);
+    };
+
+    var tel1 = new telefon("4G", "Android", "Helio G95", "4GB"); // nowy obiekt tel1
+    var tel2 = new telefon('5G', 'iOS', 'Apple A19 Pro', "6GB");
+    var tel3 = new telefon('5G', 'Android', 'MediaTek Dimensity 8300 Ultra', "8GB");
+
+    
+    document.write("dostęp do właściwości"+"<br>");
+    // poniżej dostęp do pól osoby1
+    document.write("tel pierwszy" + " " + tel1.siec + " " + tel1.system + " " + tel1.procesor + " " + tel1.ram + "<br>");
+    document.write("tel drugi" + " " + tel2.siec + " " + tel2.system + " " + tel2.procesor + " " + tel2.ram + "<br>");
+    document.write("tel trzeci" + " " + tel3.siec + " " + tel3.system + " " + tel3.procesor + " " + tel3.ram + "<br>");
+    
+    tel1.wypisz(); // uruchomienie metody wypisz() dotyczącej tel 1
+    tel2.wypisz();
+    tel3.wypisz();
+    </script>
+</head>
+<body>
+    <br>
+    programowanie obiektowe
+</body>
+</html>
+</textarea>
+</body>
+</html>

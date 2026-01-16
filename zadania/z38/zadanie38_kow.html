@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body bgcolor="silver">
+    <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+        var imie=prompt("Jakie masz imię? ", "");
+        var nazwisko=prompt("Jakie masz nazwisko? ", "");
+        document.write("<font color=green size=30px>Moje nazwisko to: " + imie + " " + nazwisko + "<br>");
+        var dzien_ur = parseFloat(prompt("Podaj swój dzień urodzenia: ",""));
+
+        var liczba1=imie.length;
+        var liczba2=liczba1+7;
+        var liczba3=nazwisko.length;
+        var liczba4=liczba3+4;
+        document.write("liczba1 = " + liczba1 + "<br>");
+        document.write("liczba2 = " + liczba1 + " + 7 = " + liczba2 + "<br>");
+        document.write("liczba3 = " + liczba3 + "<br>");
+        document.write("liczba4 = " + liczba4 + " + 4 = " + liczba4 + "</font><br>");
+        
+        document.write("----------MENU----------<br>");
+        document.write(liczba1 + " - wyświetlanie teorii o operatorach logicznych<br>");
+        document.write(liczba3+20 + " - sprawdzanie czy liczba należy do przedziału ("+ liczba1 + ";" + liczba2 + "]<br>");
+        document.write(dzien_ur+50 + " - sprawdzanie czy liczba należy do przedziału (-oo;" + liczba3 + ") lub [" + liczba4 + "; +oo)<br>");
+
+</script>
+</div>
+</body>
+</html>

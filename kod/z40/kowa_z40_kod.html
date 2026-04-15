@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Kowalski Z40_KOD</title>
+</head>
+<body>
+<textarea cols="120" rows="33">
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <meta charset="UTF-8">
+    <title>Kowalski Z40_JS</title>
+<body>
+
+    <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+        var x=prompt("podaj argument x=","");
+        var x_kow=parseFloat(x);
+        document.write("wykonał Adam Kowalewski <br>");
+        document.write("czytany argument x="+x_kow+"<br>");
+        function f_kow(x_kow) {
+            if(x_kow>=2) {
+                return 9;
+            }
+            if((x_kow>-2)&&(x_kow<0)) {
+                return Math.pow(x_kow+1, 2);
+            }
+            if((x_kow>=0)&&(x_kow<2)) {
+                return Math.pow(x_kow, 3) + 1;
+            }
+            if (x_kow<-2){
+                return 1;
+            }
+        }
+        document.write("f(" + x + ")="+f_kow(x_kow)+"<br>");
+    </script>
+    </div>
+</body>
+</html>
+<!-- Kowalewski Z40_JS -->
+</textarea>
+</body>
+</html>
+<!-- Kowalewski Z40_KOD -->

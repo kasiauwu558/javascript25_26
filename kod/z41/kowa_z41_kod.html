@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Kowalski Z41_KOD</title>
+</head>
+<body>
+<textarea cols="120" rows="166">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Kowalewski Z41_JS</title>
+    <meta charset="utf-8">
+    <style>
+    h1 {
+         text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <h1>Proste działania</h1><br>
+    <h2>Kowalewski klasa 3G</h2>
+    <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a"><br><br>
+    <label for="b">Podaj drugą liczbę:</label> <input type="number" id="b"><br><br>
+    <input type="button" value="DODAWANIE" onclick="suma_kow()">
+    <input type="button" value="ODEJMOWANIE" onclick="roznica_kow()">
+    <input type="button" value="MNOŻENIE" onclick="iloczyn_kow()">
+    <input type="button" value="DZIELENIE" onclick="iloraz_kow()">
+    <input type="button" value="TEORIA-kowalewski" onclick="TEORIA_kow()">
+    <div id="wynik" style="margin-top:20px;"></div>
+    <script>
+        function suma_kow(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == ""){
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } 
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var suma = a + b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma.toFixed(2);
+            }
+            //alert(a);
+            //console.log(a);
+        }
+        function roznica_kow(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            }
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var roznica = a - b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica.toFixed(2);
+            }
+        }
+        function iloczyn_kow(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == ""){
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } 
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var iloczyn = a * b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn.toFixed(2);
+            }
+        }
+        function iloraz_kow() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            }
+            else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                if (b == 0) {
+                    document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+                }
+                else {
+                    var iloraz = a / b;
+                    document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz.toFixed(2);
+                }
+            }
+        }
+
+        function TEORIA_kow() {
+            document.write("<font color=green size=4>Pierwsza linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>label for=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>");
+            document.write("<font color=red size=4>Podaj pierwszą liczbę:</font>");
+            document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>/label</font>"+"<font color=red size=4>&gt;</font>");
+            document.write("<font color=red size=4> &lt;</font>"+"<font color=red size=4>input type=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>number</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4> id=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>"+"<br>");
+            document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>Ta linijka kodu HTML tworzy interfejs użytkownika składający się z etykiety (label)[opis wprowadzania danych, czyli tekst przed polem input] i pola do wprowadzania danych (input) w języku JavaScript (oraz HTML). label i input współpracują między sobą.</font>"+"<br>");
+            document.write("<font color=red size=4>Oto szczegółowy opis działania każdego elementu:</font>"+"<br>");
+            document.write("<font color=red size=4>• &lt;label for=&quot;a&quot;&gt;Podaj pierwszą liczbę:&lt;/label&gt;: Jest to element etykiety (&lt;label&gt;), który jest używany do identyfikacji pola formularza. Atrybut for w etykiecie odnosi się do identyfikatora (id) elementu formularza, do którego etykieta jest przypisana. W tym przypadku, for=&quot;a&quot; oznacza, że etykieta jest przypisana do pola formularza z identyfikatorem id=&quot;a&quot;. Tekst Podaj pierwszą liczbę: jest wyświetlany jako opis pola formularza, pomagając użytkownikowi zrozumieć, jakie informacje powinien wprowadzić.</font>"+"<br>");
+            document.write("<font color=red size=4>• &lt;input type=&quot;number&quot; id=&quot;a&quot;&gt;: Jest to element formularza (&lt;input&gt;), który pozwala użytkownikowi na wprowadzenie danych. Atrybut type=&quot;number&quot; określa, że pole przyjmie tylko wartości liczbowe, co oznacza, że użytkownik może wprowadzić tylko liczby (całkowite oraz zmiennoprzecinkowe, w zależności od przeglądarki i ustawień regionalnych). Atrybut id=&quot;a&quot; nadaje temu polu formularza unikalny identyfikator, który może być używany w JavaScript i CSS do manipulacji lub stylizacji tego elementu.</font>"+"<br>");
+            document.write("<font color=red size=4>W praktyce, połączenie etykiety z polem formularza poprzez for i id ułatwia użytkownikom korzystanie z formularzy, szczególnie w przypadku osób korzystających z czytników ekranu, ponieważ po kliknięciu na etykietę, fokus zostaje automatycznie przesunięty do przypisanego pola formularza, co ułatwia wprowadzanie danych.</font>"+"<br><br>");
+            
+            document.write("<font color=green size=4>Druga linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>input type=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>button</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4> value=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>DODAWANIE</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4> onclick=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>suma()</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>&gt;</font>"+"<br>");
+            document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>Wykonanie przycisku o nazwie DODAWANIE i z takim samym napisem, kliknięcie myszką uruchamia funkcję suma().</font>"+"<br><br>");
+
+            document.write("<font color=green size=4>Trzecia linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>var a = document.getElementById(</font>");
+            document.write("<font color=red size=4>&quot;</font>"+"<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>).value;</font>"+"<br>");
+            document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>wpisanie do zmiennej 'a' wartości z elementu o Id 'a' (zbieżność nazw)</font>"+"<br><br>");
+
+            document.write("<font color=green size=4>Czwarta linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>if (a == </font>");
+            document.write("<font color=red size=4>&quot;</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4> || b == </font>");
+            document.write("<font color=red size=4>&quot;</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>)</font>"+"<br>");
+            document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>sprawdzenie czy pola 'a' lub 'b' są puste.</font>"+"<br><br>");
+
+            document.write("<font color=green size=4>Piąta linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>document.getElementById(</font>");
+            document.write("<font color=red size=4>&quot;</font>"+"<font color=red size=4>wynik</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>).innerHTML = </font>");
+            document.write("<font color=red size=4>&quot;</font>"+"<font color=red size=4>Wynik działania wynosi: </font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4> + suma;</font>"+"<br>");
+            document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>pobranie wartości Id o nazwie 'wynik' i wyprowadzenie w oknie przeglądarki tekstu 'Wynik działania wynosi: ' oraz wartości zmiennej suma</font>"+"<br>");
+        }
+    </script>
+</body>
+</html>
+<!-- Kowalski Z41_JS -->
+
+</textarea>
+</body>
+</html>
+<!-- Kowalewski Z41_KOD -->

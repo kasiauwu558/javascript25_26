@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+
+        var a_kow = 7;
+        var b_kow = 24;
+
+        for (var j_kow = 1; j_kow <= b_kow; j_kow++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for (var i_kow = 1; i_kow <= a_kow - 2; i_kow++) {
+            document.write("*");
+
+            for (var j_kow = 1; j_kow <= b_kow - 2; j_kow++) {
+                document.write("&nbsp;&nbsp;");
+            }
+
+            document.write("*<br>");
+        }
+
+        for (var j_kow = 1; j_kow <= b_kow; j_kow++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>

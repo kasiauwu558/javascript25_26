@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Kowalski Z60_KOD</title>
+</head>
+<body>
+<textarea cols="100" rows="30">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script>
+    var l1_kow = parseInt(prompt("Podaj pierwszą liczbę", ""));
+    var l2_kow = parseInt(prompt("Podaj drugą liczbę", ""));
+
+    if (l1_kow === l2_kow) {
+        confirm("brak obliczeń");
+    } else if (l1_kow < l2_kow) {
+        for (var i_kow = l1_kow; i_kow <= l2_kow; i_kow++) {
+            if (Math.abs(i_kow % 2) === 1) {
+                document.write("<p style='color:green; font-size:40px;'>" + i_kow + " </p>");
+            }
+        }
+    } else {
+        for (var i_kow = l1_kow; i_kow >= l2_kow; i_kow--) {
+            if (Math.abs(i_kow % 2) === 1) {
+                document.write("<p style='color:blue; font-size:20px;'>" + i_kow + " </p>");
+            }
+        }
+    }
+</script>
+</head>
+<body>
+</body>
+</html>
+</textarea>
+</body>
+</html>
+<!-- Kowalewski Z60_KOD -->

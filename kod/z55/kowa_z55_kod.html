@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Kowalski Z55_KOD</title>
+</head>
+<body>
+<textarea cols="80" rows="35">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        var a_kow = parseInt(prompt("podaj a",""));
+        var b_kow = parseInt(prompt("podaj b",""));
+
+        for (var j_kow = 1; j_kow <= b_kow; j_kow++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        var wiersz_kow = "*";
+        for (var j_kow = 1; j_kow <= (b_kow - 2); j_kow++) {
+            wiersz_kow = wiersz_kow + "&nbsp;&nbsp;";
+        }
+        wiersz_kow = wiersz_kow + "*";
+
+        for (var i_kow = 1; i_kow <= (a_kow - 2); i_kow++) {
+            document.write(wiersz_kow + "<br>");
+        }
+
+        for (var j_kow = 1; j_kow <= b_kow; j_kow++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
+<!-- Kowalewski Z55_KOD -->

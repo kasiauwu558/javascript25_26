@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Kowalski Z57_KOD</title>
+</head>
+<body>
+<textarea cols="120" rows="35">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        do {
+            l1_t_kow = parseFloat(prompt("podaj liczbe z zakresu <20;60>",""));
+            l2_t_kow = parseFloat(prompt("podaj liczbe z zakresu <20;60>",""));
+        } while (60 < l1_t_kow || l1_t_kow < 20 || (60 < l2_t_kow || l2_t_kow < 20));
+
+        pocz_kow = parseInt(prompt("Podaj wartość początkową wielkości tekstu",""));
+        tekst_kow = prompt("podaj dowolny tekst","");
+
+        if (l1_t_kow < l2_t_kow){
+            for (var i=pocz_kow; i<=100; i+=5){
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+            }
+        } else if (l2_t_kow < l1_t_kow){
+            for (var i=pocz_kow; i>=0; i-=5){
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");;
+            }
+        } else if (l2_t_kow == l1_t_kow) {
+            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+        }
+
+        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+    </script>
+</head>
+<body>
+</body>
+</html>
+</textarea>
+</body>
+</html>
+<!-- Kowalewski Z57_KOD -->

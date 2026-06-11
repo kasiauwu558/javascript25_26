@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Kowalski Z56_KOD</title>
+</head>
+<body>
+<textarea cols="80" rows="40">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        var imie_kow = prompt("Podaj imię:");
+        var nazwisko_kow = prompt("Podaj nazwisko:");
+
+        var a_kow = (nazwisko_kow.length % 4) + 5;
+        var b_kow = (imie_kow.length % 6) + 20;
+
+        for (var j_kow = 1; j_kow <= b_kow; j_kow++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for (var i_kow = 1; i_kow <= a_kow - 2; i_kow++) {
+            document.write("*");
+
+            for (var j_kow = 1; j_kow <= b_kow - 2; j_kow++) {
+                document.write("&nbsp;&nbsp;");
+            }
+
+            document.write("*<br>");
+        }
+
+        for (var j_kow = 1; j_kow <= b_kow; j_kow++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
+<!-- Kowalewski Z56_KOD -->
